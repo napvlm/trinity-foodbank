@@ -1,55 +1,41 @@
 import {
-  Link as ChakraLink,
   Text,
-  Code,
-  List,
-  ListIcon,
-  ListItem,
+  AspectRatio
 } from '@chakra-ui/react'
-import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
-
 import { Hero } from '../components/Hero'
 import { Container } from '../components/Container'
 import { Main } from '../components/Main'
 import { DarkModeSwitch } from '../components/DarkModeSwitch'
-import { CTA } from '../components/CTA'
 import { Footer } from '../components/Footer'
+import { LanguageSwitch } from '../components/LanguageSwitch'
+import { PromoText } from '../components/PromoText'
+import { InlineWidget } from 'react-calendly'
 
 const Index = () => (
-  <Container height="100vh">
+  <Container>
     <Hero />
     <Main>
-      <Text color="text">
-        Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{' '}
-        <Code>TypeScript</Code>.
-      </Text>
-
-      <List spacing={3} my={0} color="text">
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink
-            isExternal
-            href="https://chakra-ui.com"
-            flexGrow={1}
-            mr={2}
-          >
-            Chakra UI <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
-            Next.js <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-      </List>
+      <LanguageSwitch />
+      <PromoText />
+      <InlineWidget url="https://calendly.com/ruslan-anisimov/5min"
+        styles={{
+          height: '1030px',
+          minWidth: '320px',
+          width: '100%'
+        }}
+      />
+      <Text fontSize='4xl'>Find us here:</Text>
+      <AspectRatio ratio={16 / 9} maxWidth='700px' minWidth='100%'>
+        <iframe
+          src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11552.59837565429!2d-79.573419!3d43.6242453!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x172826777ce80be7!2sThe%20Mississauga%20Food%20Bank!5e0!3m2!1sen!2sca!4v1664841696224!5m2!1sen!2sca'
+        />
+      </AspectRatio>
     </Main>
 
     <DarkModeSwitch />
     <Footer>
-      <Text>Next ❤️ Chakra</Text>
+      <Text>Made with ❤️ for all people</Text>
     </Footer>
-    <CTA />
   </Container>
 )
 
