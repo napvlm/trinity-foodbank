@@ -197,6 +197,9 @@ const Index = () => {
             minWidth: '320px',
             width: '100%'
           }}
+          pageSettings={{
+            hideGdprBanner: true
+          }}
         />
         <Text fontSize='4xl'>{map}</Text>
         <AspectRatio ratio={16 / 9} maxWidth='700px' minWidth='100%'>
