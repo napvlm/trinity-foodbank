@@ -1,3 +1,6 @@
+# Main goal
+Just one simple app that hepled a bunch of people to not spend the time standing outside in the cold. I offered my volunteer service to the Trinity House of Hope in Mississauga, Canada. I saw that many people that use their food bank services are start to qeue outside of the church up to 2 hours before the opening in order to make sure they will get something. I proposed a simple booking solution that allowed people to just come at the scheduled time without worries of missing out on available products. This website was gladly welcomed by the workers of this church and people who come there. I also conducted basic training on how to use the website for the end users for couple of weeks in order to make sure everyone is familiar. As far as I know this website still in use.
+
 # Example app with [chakra-ui](https://github.com/chakra-ui/chakra-ui) and TypeScript
 
 This example features how to use [chakra-ui](https://github.com/chakra-ui/chakra-ui) as the component library within a Next.js app with TypeScript.
@@ -31,10 +34,3 @@ pnpm create next-app --example with-chakra-ui with-chakra-ui-app
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-## Notes
-
-Chakra has supported Gradients and RTL in `v1.1`. To utilize RTL, [add RTL direction and swap](https://chakra-ui.com/docs/features/rtl-support).
-
-If you don't have multi-direction app, you should make `<Html lang="ar" dir="rtl">` inside `_document.ts`.
-# trinity-foodbank
